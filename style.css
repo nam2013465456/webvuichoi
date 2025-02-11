@@ -1,57 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+/* Basic reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-}
-
-#products {
+/* Center the game container */
+body {
     display: flex;
-    justify-content: space-around;
-    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
 }
 
-.product {
-    background-color: white;
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 200px;
+/* Game container styling */
+#game-container {
     text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
 }
 
-.product img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.product h3 {
-    color: #333;
-}
-
-.product button {
+/* Button style */
+#click-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top: 20px;
     background-color: #4CAF50;
     color: white;
-    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.product button:hover {
+#click-button:hover {
     background-color: #45a049;
-}
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: white;
 }
