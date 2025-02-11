@@ -3,34 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roblox Account Shop</title>
+    <title>Clicking Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Roblox Account Shop</h1>
-    </header>
-    
-    <section id="products">
-        <h2>Our Products</h2>
-        <div class="product">
-            <img src="roblox-account-1.jpg" alt="Account 1">
-            <h3>Account Level 1</h3>
-            <p>Price: $5.00</p>
-            <button class="buy-button" onclick="purchaseProduct(1)">Buy Now</button>
-        </div>
-        
-        <div class="product">
-            <img src="roblox-account-2.jpg" alt="Account 2">
-            <h3>Account Level 2</h3>
-            <p>Price: $10.00</p>
-            <button class="buy-button" onclick="purchaseProduct(2)">Buy Now</button>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Roblox Account Shop</p>
-    </footer>
+    <div id="game-container">
+        <h1>Click the Button!</h1>
+        <p>Score: <span id="score">0</span></p>
+        <button id="click-button">Click Me!</button>
+        <p id="time-left">Time Left: <span id="time">30</span> seconds</p>
+    </div>
 
     <script src="script.js"></script>
 </body>
